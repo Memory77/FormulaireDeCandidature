@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de candidature</title>
+</head>
+<body>
+    <h1>Formulaire de candidature</h1>
+
+    <p>Veuillez renseigner : </p><br>
+    <form method="get" action="">
+        <label for="prenom">1. Votre prénom :</label>
+        <input type="textarea" placeholder="ex : Jean" name="prenom" id="prenom">
+        <br><br>
+        <label for="nom">2. Votre nom :</label>
+        <input type="textarea" placeholder="ex : Peste" name="nom" id="nom">
+        <br><br>
+        <label for="age">3. Votre âge :</label>
+        <input type="number" min="0" placeholder="ex : 60" name="age" id="age">
+        <br><br>
+        <label for="sexe">4. Votre sexe :</label>
+
+        <br><br>
+        <label for="email">Votre adresse email :</label>
+        <input type="email" placeholder="ex : jean.peste@gmail.com" name="email" id="email">
+
+
+        <br><br>
+        <label for="nation">Votre nationalité</label>
+        <select name="nation" id="nation">
+            <option value="espagne">Français</option>
+            <option value="royaume-uni">Italien</option>
+            <option value="canada">Canadien</option>
+            <option value="japon">Japonais</option>
+        </select>
+        <br><br>
+        <input type="date">
+
+
+    </form>
+    
+</body>
+</html>
