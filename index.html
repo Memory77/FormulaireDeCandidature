@@ -9,35 +9,77 @@
 <body>
     <h1>Formulaire de candidature</h1>
 
-    <p>Veuillez renseigner : </p><br>
+    
     <form method="get" action="">
-        <label for="prenom">1. Votre prénom :</label>
-        <input type="textarea" placeholder="ex : Jean" name="prenom" id="prenom">
-        <br><br>
-        <label for="nom">2. Votre nom :</label>
-        <input type="textarea" placeholder="ex : Peste" name="nom" id="nom">
-        <br><br>
-        <label for="age">3. Votre âge :</label>
-        <input type="number" min="0" placeholder="ex : 60" name="age" id="age">
-        <br><br>
-        <label for="sexe">4. Votre sexe :</label>
-
-        <br><br>
-        <label for="email">Votre adresse email :</label>
-        <input type="email" placeholder="ex : jean.peste@gmail.com" name="email" id="email">
-
-
-        <br><br>
-        <label for="nation">Votre nationalité</label>
-        <select name="nation" id="nation">
-            <option value="espagne">Français</option>
-            <option value="royaume-uni">Italien</option>
-            <option value="canada">Canadien</option>
-            <option value="japon">Japonais</option>
-        </select>
-        <br><br>
-        <input type="date">
-
+        <fieldset>
+            <legend><strong>Informations personnelles</strong></legend>
+            <p>Veuillez renseigner : </p><br>
+            <label for="prenom">1. Votre prénom :</label>
+            <input type="textarea" placeholder="ex : Jean" name="prenom" id="prenom">
+            <br><br>
+            <label for="nom">2. Votre nom :</label>
+            <input type="textarea" placeholder="ex : Peste" name="nom" id="nom">
+            <br><br>
+            <label for="age">3. Votre âge :</label>
+            <input type="number" min="0" placeholder="ex : 60" name="age" id="age">
+            <br><br>
+            <label for="sexe">4. Votre sexe :</label>
+            <label>
+            <input type="radio" name="sexe" value="male">
+                Homme
+            </label>
+            <label>
+            <input type="radio" name="sexe" value="female">
+                Femme
+            </label>
+            <br><br>
+            <label for="email">5. Votre adresse email :</label>
+            <input type="email" placeholder="ex : jean.peste@gmail.com" name="email" id="email">
+            <br><br>
+            <label for="adresse">6. Votre adresse postale :</label>
+            <input type="textarea" placeholder="ex : 3 impasse..." name="adresse" id="adresse">
+            <label>
+            <br><br>
+            6. Code postal:
+            <input type="text" placeholder="ex : 59163" name="code_postal" pattern="[0-9]{5}" required>
+            </label>
+            <br><br>
+            <label for="ville">8. Votre ville :</label>
+            <input type="textarea" placeholder="ex : Condé" name="ville" id="ville">
+            <br><br>
+            <label for="metier">9. Métier exercé :</label>
+            <input type="textarea" placeholder="ex : chomeur" name="metier" id="metier">
+            <br><br>
+            <label for="nation">10. Votre nationalité</label>
+            <select name="nation" id="nation">
+                <option value="espagne">Français</option>
+                <option value="royaume-uni">Italien</option>
+                <option value="canada">Canadien</option>
+                <option value="japon">Japonais</option>
+            </select>
+            <br><br>
+            <label for="naissance">11. Votre date de naissance</label>
+            <input type="date">
+            <br><br>
+            <label for="pays">12. Votre pays de naissance</label>
+            <select name="pays" id="pays">
+                <option value="espagne">Français</option>
+                <option value="royaume-uni">Italien</option>
+                <option value="canada">Canadien</option>
+                <option value="japon">Japonais</option>
+            </select>
+            <br><br>
+            <label for="num_secu">13. Numéro de sécurité sociale :</label>
+            <input type="text" id="num_secu" name="num_secu" pattern="[0-9]{13}" required>
+            <br><br>
+            <label for="num_passport">14. Numéro de passeport :</label>
+            <input type="text" id="num_passport" name="num_passport" minlength="6" maxlength="15" required>
+            <br><br>
+            <label for="date_delivrance">15. Date de délivrance :</label>
+            <input type="date" id="date_delivrance" name="date_delivrance" required>
+            <label for="date_validite">16. Date de validité :</label>
+            <input type="date" id="date_validite" name="date_validite" required>
+        </fieldset>
 
     </form>
     
