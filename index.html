@@ -10,22 +10,22 @@
     <h1>Formulaire de candidature</h1>
 
     
-    <form method="get" action="">
+    <form method="get">
         <fieldset>
             <legend><strong>Informations personnelles</strong></legend>
             <p>Veuillez renseigner : </p><br>
             <label for="prenom">1. Votre prénom :</label>
-            <input type="textarea" placeholder="ex : Jean" name="prenom" id="prenom">
+            <input type="text" placeholder="ex : Jean" name="prenom" id="prenom">
             <br><br>
             <label for="nom">2. Votre nom :</label>
-            <input type="textarea" placeholder="ex : Peste" name="nom" id="nom">
+            <input type="text" placeholder="ex : Peste" name="nom" id="nom">
             <br><br>
             <label for="age">3. Votre âge :</label>
             <input type="number" min="0" placeholder="ex : 60" name="age" id="age">
             <br><br>
             <label for="sexe">4. Votre sexe :</label>
             <label>
-            <input type="radio" name="sexe" value="male">
+            <input type="radio" name="sexe"  id="sexe" value="male">
                 Homme
             </label>
             <label>
@@ -37,7 +37,7 @@
             <input type="email" placeholder="ex : jean.peste@gmail.com" name="email" id="email">
             <br><br>
             <label for="adresse">6. Votre adresse postale :</label>
-            <input type="textarea" placeholder="ex : 3 impasse..." name="adresse" id="adresse">
+            <textarea cols="3" rows="3" name="adresse" id="adresse"></textarea>
             <label>
             <br><br>
             6. Code postal:
@@ -45,10 +45,10 @@
             </label>
             <br><br>
             <label for="ville">8. Votre ville :</label>
-            <input type="textarea" placeholder="ex : Condé" name="ville" id="ville">
+            <input type="text" placeholder="ex : Condé" name="ville" id="ville">
             <br><br>
             <label for="metier">9. Métier exercé :</label>
-            <input type="textarea" placeholder="ex : chomeur" name="metier" id="metier">
+            <input type="text" placeholder="ex : chomeur" name="metier" id="metier">
             <br><br>
             <label for="nation">10. Votre nationalité</label>
             <select name="nation" id="nation">
@@ -59,7 +59,7 @@
             </select>
             <br><br>
             <label for="naissance">11. Votre date de naissance</label>
-            <input type="date">
+            <input type="date" name="naissance" id="naissance">
             <br><br>
             <label for="pays">12. Votre pays de naissance</label>
             <select name="pays" id="pays">
